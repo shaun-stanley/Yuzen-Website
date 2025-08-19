@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS variables for design tokens */
+:root{
+  --bg-rice:#FAFAF7; --mist:#EEF3EC; --ceremonial:#0B6B3A; --gyokuro:#1E3D32;
+  --ink:#1A1D1F; --kintsugi:#B88A44; --shadow:10,20,15;
+}
+
+html, body { height: 100%; background: var(--bg-rice); color: #1A1D1F; }
+
+.glass{
+  background: rgba(255,255,255,.6);
+  backdrop-filter: blur(14px);
+  border:1px solid rgba(30,61,50,.08);
+  box-shadow:0 6px 24px rgba(var(--shadow),.08);
+}
+
+.focus-ring:focus-visible{
+  outline: 2px solid var(--ceremonial);
+  outline-offset: 2px;
+}
