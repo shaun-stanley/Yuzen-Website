@@ -4,11 +4,12 @@ import type { Route } from 'next';
 
 export default function Hero(){
   return (
-    <section className="relative pt-28 pb-16">
-      <div className="absolute inset-0 -z-10">
-        <Image src="/hero.svg" alt="" fill priority className="object-cover opacity-80"/>
+    <section className="relative overflow-hidden pt-32 pb-24">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <Image src="/hero.svg" alt="" fill priority className="object-cover opacity-60"/>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/50 to-transparent" />
       </div>
-      <div className="mx-auto max-w-[1200px] px-6 grid md:grid-cols-2 items-center gap-10">
+      <div className="mx-auto max-w-[1200px] px-6 grid md:grid-cols-2 items-center gap-12">
         <div>
           <h1 className="font-serif text-5xl md:text-6xl leading-tight text-gyokuro">Ceremonial-grade performance, at scale.</h1>
           <p className="mt-4 text-lg text-black/70 max-w-[48ch]">Matcha for cafes, hotels, and craft kitchens—sourced with precision, stone-milled with care.</p>

@@ -2,7 +2,7 @@ type Row = { qty: string; unit: string; unitPrice: string; margin: string; leadT
 
 export default function PricingTable({ rows }: { rows: Row[] }){
   return (
-    <div className="overflow-x-auto rounded-2xl border border-black/5 bg-white shadow-soft">
+    <div className="overflow-x-auto rounded-2xl glass">
       <table className="w-full text-sm">
         <thead className="bg-mist/50">
           <tr className="[&>th]:text-left [&>th]:py-3 [&>th]:px-4">

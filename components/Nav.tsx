@@ -13,7 +13,11 @@ export default function Nav(){
   },[]);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition ${scrolled ? 'glass' : 'bg-transparent'}`}>
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition backdrop-blur-md ${
+        scrolled ? 'glass' : 'bg-gradient-to-b from-white/60 to-transparent'
+      }`}
+    >
       <div className="mx-auto max-w-[1200px] px-6 py-3 flex items-center justify-between">
         <Link href="/" className="font-serif text-xl">Yūzen Matcha</Link>
         <nav className="hidden md:flex gap-8 text-sm">

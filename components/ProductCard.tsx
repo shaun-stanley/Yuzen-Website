@@ -9,7 +9,7 @@ export type Product = {
 
 export default function ProductCard({ product }: { product: Product }){
   return (
-    <article className="rounded-2xl border border-black/5 bg-white p-5 shadow-sm hover:shadow-md transition">
+    <article className="rounded-2xl glass p-5 shadow-sm hover:shadow-md transition">
       <div className="flex items-start justify-between">
         <h3 className="font-medium">{product.name} | SKU {product.sku}</h3>
         <span className="text-[11px] rounded-full px-2 py-1 bg-mist">MOQ {product.moq}</span>
