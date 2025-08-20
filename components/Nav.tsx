@@ -14,16 +14,16 @@ export default function Nav(){
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition ${scrolled ? 'glass' : 'bg-transparent'}`}>
-      <div className="mx-auto max-w-[1200px] px-6 py-3 flex items-center justify-between">
-        <Link href="/" className="font-serif text-xl">Yūzen Matcha</Link>
-        <nav className="hidden md:flex gap-8 text-sm">
+      <div className="mx-auto max-w-[1400px] px-6 py-4 flex items-center justify-between">
+        <Link href="/" className="font-serif text-2xl text-gyokuro">Yūzen Matcha</Link>
+        <nav className="hidden md:flex gap-10 text-sm">
           <Link className="opacity-80 hover:opacity-100" href="/catalog">Catalog</Link>
           <Link className="opacity-80 hover:opacity-100" href="/pricing">Pricing</Link>
           <Link className="opacity-80 hover:opacity-100" href="/how-it-works">How it works</Link>
         </nav>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-5">
           <Link className="text-sm opacity-80 hover:opacity-100" href={'/signin' as Route}>Sign in</Link>
-          <Link className="px-3 py-2 rounded-full bg-ceremonial text-white text-sm focus-ring" href={'/request-access' as Route}>Request access</Link>
+          <Link className="px-4 py-2 rounded-full bg-gradient-to-r from-ceremonial to-gyokuro text-white text-sm focus-ring" href={'/request-access' as Route}>Request access</Link>
         </div>
       </div>
     </header>
