@@ -8,13 +8,17 @@
   --ink:#1A1D1F; --kintsugi:#B88A44; --shadow:10,20,15;
 }
 
-html, body { height: 100%; background: var(--bg-rice); color: #1A1D1F; }
+html, body {
+  height: 100%;
+  background: linear-gradient(135deg, var(--mist), var(--bg-rice));
+  color: #1A1D1F;
+}
 
 .glass{
-  background: rgba(255,255,255,.6);
-  backdrop-filter: blur(14px);
-  border:1px solid rgba(30,61,50,.08);
-  box-shadow:0 6px 24px rgba(var(--shadow),.08);
+  background: linear-gradient(to bottom right, rgba(255,255,255,.7), rgba(255,255,255,.4));
+  backdrop-filter: blur(16px);
+  border:1px solid rgba(30,61,50,.06);
+  box-shadow:0 8px 24px rgba(var(--shadow),.05);
 }
 
 .focus-ring:focus-visible{
