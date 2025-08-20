@@ -17,10 +17,6 @@ const config: Config = {
       },
       boxShadow: {
         soft: "0 6px 24px rgba(10,20,15,.08)"
-      },
-      fontFamily: {
-        serif: ["var(--font-fraunces)"],
-        sans: ["var(--font-inter)"]
       }
     }
   },
