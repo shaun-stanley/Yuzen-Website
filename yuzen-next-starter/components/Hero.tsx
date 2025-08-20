@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Route } from 'next';
 
 export default function Hero(){
   return (
@@ -12,7 +13,7 @@ export default function Hero(){
           <h1 className="font-serif text-5xl md:text-6xl leading-tight text-gyokuro">Ceremonial-grade performance, at scale.</h1>
           <p className="mt-4 text-lg text-black/70 max-w-[48ch]">Matcha for cafes, hotels, and craft kitchens—sourced with precision, stone-milled with care.</p>
           <div className="mt-8 flex gap-3">
-            <Link href="/request-access" className="px-5 py-3 rounded-xl bg-ceremonial text-white shadow-soft">Request access</Link>
+            <Link href={'/request-access' as Route} className="px-5 py-3 rounded-xl bg-ceremonial text-white shadow-soft">Request access</Link>
             <Link href="/catalog" className="px-5 py-3 rounded-xl border border-black/10 bg-white shadow-soft">View catalog</Link>
           </div>
           <ul className="mt-8 grid grid-cols-3 gap-6 text-sm text-black/70">

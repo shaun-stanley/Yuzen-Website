@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import type { Route } from 'next';
 import { useEffect, useState } from 'react';
 
 export default function Nav(){
@@ -21,8 +22,8 @@ export default function Nav(){
           <Link className="opacity-80 hover:opacity-100" href="/how-it-works">How it works</Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Link className="text-sm opacity-80 hover:opacity-100" href="/signin">Sign in</Link>
-          <Link className="px-3 py-2 rounded-full bg-ceremonial text-white text-sm focus-ring" href="/request-access">Request access</Link>
+          <Link className="text-sm opacity-80 hover:opacity-100" href={'/signin' as Route}>Sign in</Link>
+          <Link className="px-3 py-2 rounded-full bg-ceremonial text-white text-sm focus-ring" href={'/request-access' as Route}>Request access</Link>
         </div>
       </div>
     </header>
