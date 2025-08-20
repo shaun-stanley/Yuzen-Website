@@ -8,7 +8,7 @@
   --ink:#1A1D1F; --kintsugi:#B88A44; --shadow:10,20,15;
 }
 
-html, body { height: 100%; background: var(--bg-rice); color: #1A1D1F; }
+html, body { height: 100%; color: #1A1D1F; }
 
 .glass{
   background: rgba(255,255,255,.6);

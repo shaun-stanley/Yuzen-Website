@@ -18,7 +18,7 @@ Open http://localhost:3000
 ## Customize
 - Edit tokens in `tailwind.config.ts` and `app/globals.css`.
 - Update copy & sample data in `app/page.tsx`, `app/catalog/page.tsx`, `app/pricing/page.tsx`.
-- Replace `/public/hero.svg` and add product images in `/public`.
+- Add product images in `/public` as needed.
 
 ## Notes
 - Placeholder prices & SKUs — replace with your real data.

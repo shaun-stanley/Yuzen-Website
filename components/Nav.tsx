@@ -13,8 +13,8 @@ export default function Nav(){
   },[]);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition ${scrolled ? 'glass' : 'bg-transparent'}`}>
-      <div className="mx-auto max-w-[1200px] px-6 py-3 flex items-center justify-between">
+    <header className={`fixed inset-x-0 top-0 z-50 transition backdrop-blur ${scrolled ? 'glass' : 'bg-gradient-to-b from-white/70 to-white/20'}`}>
+      <div className="mx-auto max-w-[1200px] px-6 py-4 flex items-center justify-between md:py-6">
         <Link href="/" className="font-serif text-xl">Yūzen Matcha</Link>
         <nav className="hidden md:flex gap-8 text-sm">
           <Link className="opacity-80 hover:opacity-100" href="/catalog">Catalog</Link>
@@ -23,7 +23,7 @@ export default function Nav(){
         </nav>
         <div className="flex items-center gap-4">
           <Link className="text-sm opacity-80 hover:opacity-100" href={'/signin' as Route}>Sign in</Link>
-          <Link className="px-3 py-2 rounded-full bg-ceremonial text-white text-sm focus-ring" href={'/request-access' as Route}>Request access</Link>
+          <Link className="px-4 py-2 rounded-full bg-gradient-to-r from-ceremonial to-gyokuro text-white text-sm focus-ring" href={'/request-access' as Route}>Request access</Link>
         </div>
       </div>
     </header>

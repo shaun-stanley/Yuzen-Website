@@ -17,13 +17,13 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
-      <section className="mx-auto max-w-[1200px] px-6 pb-16">
+      <section className="mx-auto max-w-[1200px] px-6 md:px-8 py-24">
         <h2 className="font-serif text-3xl text-gyokuro">Wholesale Catalog (preview)</h2>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
           {products.map(p => <ProductCard key={p.sku} product={p} />)}
         </div>
       </section>
-      <section className="mx-auto max-w-[1200px] px-6 pb-24">
+      <section className="mx-auto max-w-[1200px] px-6 md:px-8 py-24">
         <h2 className="font-serif text-3xl text-gyokuro">Pricing & MOQ</h2>
         <div className="mt-6">
           <PricingTable rows={[

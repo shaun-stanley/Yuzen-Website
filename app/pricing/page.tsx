@@ -10,7 +10,7 @@ export default function Pricing(){
   return (
     <main>
       <Nav />
-      <section className="mx-auto max-w-[1200px] px-6 pt-28 pb-16">
+      <section className="mx-auto max-w-[1200px] px-6 md:px-8 pt-40 pb-32">
         <h1 className="font-serif text-4xl text-gyokuro">Pricing & MOQ</h1>
         <p className="text-black/70 mt-2">Transparent tiers and lead times. Replace with your own data.</p>
         <div className="mt-8">

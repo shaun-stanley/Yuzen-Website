@@ -14,7 +14,7 @@ export default function Catalog(){
   return (
     <main>
       <Nav />
-      <section className="mx-auto max-w-[1200px] px-6 pt-28 pb-16">
+      <section className="mx-auto max-w-[1200px] px-6 md:px-8 pt-40 pb-32">
         <h1 className="font-serif text-4xl text-gyokuro">Catalog</h1>
         <p className="text-black/70 mt-2">Wholesale SKUs with clear pack sizes, MOQs and tiered pricing.</p>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
