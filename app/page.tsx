@@ -17,21 +17,21 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
-      <section className="mx-auto max-w-[1200px] px-6 pb-16">
+      <section className="mx-auto max-w-[1400px] px-6 py-24">
         <h2 className="font-serif text-3xl text-gyokuro">Wholesale Catalog (preview)</h2>
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map(p => <ProductCard key={p.sku} product={p} />)}
         </div>
       </section>
-      <section className="mx-auto max-w-[1200px] px-6 pb-24">
+      <section className="mx-auto max-w-[1400px] px-6 pb-32">
         <h2 className="font-serif text-3xl text-gyokuro">Pricing & MOQ</h2>
-        <div className="mt-6">
+        <div className="mt-10">
           <PricingTable rows={[
             { qty:"10–24", unit:"1kg", unitPrice:"₹3,650", margin:"52%", leadTime:"3–5 days" },
             { qty:"25–99", unit:"1kg", unitPrice:"₹3,280", margin:"56%", leadTime:"5–7 days" },
             { qty:"100+", unit:"1kg", unitPrice:"₹2,980", margin:"60%", leadTime:"10–14 days" }
           ]} />
-          <p className="text-xs text-black/60 mt-3">Values are placeholders—replace with your real price lists per segment/region.</p>
+          <p className="text-xs text-black/60 mt-4">Values are placeholders—replace with your real price lists per segment/region.</p>
         </div>
       </section>
       <footer className="py-10 text-center text-sm text-black/60">© {new Date().getFullYear()} Yūzen Matcha</footer>
